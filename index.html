@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              tulisan: "#c1ab82",
+              begron: "#373539",
+              kotak: "#ededed",
+            },
+            fontFamily: {
+              poppins: "Poppins",
+            },
+            boxShadow: {
+              'kontol': '0 7px 14px 0px rgba(0, 0, 0, 12%)',
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      *{
+        scroll-behavior: smooth;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>firewall 70jt</title>
+  </head>
+  <body
+    class="font-poppins text-tulisan flex justify-center items-center mx-auto bg-[#2d3250]"
+  >
+    <div class="h-[100vh] w-[100vw] ">
+      <div
+        class="container min-h-[100vh] flex items-center justify-center"
+      >
+        <div class="wrapper flex justify-center items-center">
+          <div class="inner shadow-kontol p-12 m-0 rounded-xl bg-begron">
+            <!-- Form -->
+            <div class="title mb-5 text-2xl">
+                <h2>Form</h2>
+              </div>
+            <form class="myTable">
+              <p class="">
+                <label>Nama</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="bg-kotak text-[16px] leading-[28px] px-4 py-2 w-[100%] min-h-11 rounded outline-tulisan mt-1"
+                />
+              </p>
+              <p class="">
+                <label for="">NIK</label>
+                <input
+                  type="number"
+                  id="nik"
+                  class="bg-kotak text-[16px] leading-[28px] px-4 py-2 w-[100%] min-h-11 rounded outline-tulisan mt-1"
+                />
+              </p>
+              <p class="">
+                <label for="">DOB</label>
+                <input
+                  type="date"
+                  id="dob"
+                  class="bg-kotak text-[16px] leading-[28px] px-4 py-2 w-[100%] min-h-11 rounded outline-tulisan mt-1"
+                />
+              </p>
+              <a href="#bawah">
+                <button
+                  type="button"
+                  id="save"
+                  class="bg-tulisan mt-4 text-begron font-semibold leading-7 cursor-pointer text-[16px] py-2 px-4 rounded min-h-11"
+                >
+                  Simpan
+                </button>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="bawah" class="flex justify-center items-center h-[60vh] text-begron">
+        <div class="inner overflow overflow-y-scroll  shadow-kontol p-12 rounded-xl bg-kotak w-[60%]">
+          <div class="title mb-5 text-2xl">
+            <h2>Data</h2>
+          </div>
+          <!-- Data Table -->
+          <table id="myData" class="data w-[100%]" >
+            <thead>
+              <tr class="dataRow">
+                <th class="p-5 border border-begron hover:bg-tulisan">ID</th>
+                <th class="p-5 border border-begron hover:bg-tulisan">NAMA</th>
+                <th class="p-5 border border-begron hover:bg-tulisan">NIK</th>
+                <th class="p-5 border border-begron hover:bg-tulisan">DOB</th>
+                <th class="p-5 border border-begron hover:bg-tulisan">Action</th>
+              </tr>
+            </thead>
+            <tbody class=""></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

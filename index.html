@@ -46,14 +46,14 @@
     <title>firewall 70jt</title>
   </head>
   <body
-    class="font-poppins text-tulisan flex justify-center items-center mx-auto bg-[#2d3250]"
+    class="w-full font-poppins text-tulisan flex justify-center items-center mx-auto bg-[#2d3250] overflow-x-hidden"
   >
     <div class="h-[100vh] w-[100vw] ">
       <div
         class="container min-h-[100vh] flex items-center justify-center"
       >
         <div class="wrapper flex justify-center items-center">
-          <div class="inner shadow-kontol p-12 m-0 rounded-xl bg-begron">
+          <div class="inner shadow-kontol p-12 m-10 rounded-xl bg-begron">
             <!-- Form -->
             <div class="title mb-5 text-2xl">
                 <h2>Form</h2>
@@ -96,23 +96,23 @@
           </div>
         </div>
       </div>
-      <div id="bawah" class="flex justify-center items-center h-[60vh] text-begron">
-        <div class="inner overflow overflow-y-scroll  shadow-kontol p-12 rounded-xl bg-kotak w-[60%]">
+      <div id="bawah" class="flex justify-center items-center h-[60vh] text-begron max-h-96 overflow-x-hidden w-full px-4 mx-auto ">
+        <div class="inner max-h-80 overflow-x-hidden shadow-kontol p-6 rounded-xl bg-kotak w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] m-10 max-w-full">
           <div class="title mb-5 text-2xl">
             <h2>Data</h2>
           </div>
           <!-- Data Table -->
-          <table id="myData" class="data w-[100%]" >
+          <table id="myData" class="data text-center border-collapse w-full" >
             <thead>
               <tr class="dataRow">
-                <th class="p-5 border border-begron hover:bg-tulisan">ID</th>
-                <th class="p-5 border border-begron hover:bg-tulisan">NAMA</th>
-                <th class="p-5 border border-begron hover:bg-tulisan">NIK</th>
-                <th class="p-5 border border-begron hover:bg-tulisan">DOB</th>
-                <th class="p-5 border border-begron hover:bg-tulisan">Action</th>
+                <th class="p-2 sm:p-4 border border-begron hover:bg-tulisan break-words">ID</th>
+                <th class="p-2 sm:p-4 border border-begron hover:bg-tulisan break-words">NAMA</th>
+                <th class="p-2 sm:p-4 border border-begron hover:bg-tulisan break-words">NIK</th>
+                <th class="p-2 sm:p-4 border border-begron hover:bg-tulisan break-words">DOB</th>
+                <th class="p-2 sm:p-4 border border-begron hover:bg-tulisan break-words">Action</th>
               </tr>
             </thead>
-            <tbody class=""></tbody>
+            <tbody class="align-middle"></tbody>
           </table>
         </div>
       </div>
